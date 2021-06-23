@@ -18,8 +18,8 @@ in most browser configurations this will be 10px */
 }
   
 body {
-    display: grid;
-    background-color: green;
+    display: flex;
+    background-color: darkcyan;
     /* Use a system font, if none are available use an available sans-sarif   font */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -32,15 +32,47 @@ body {
 main {
     background-color: white;
     width: 250px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 20% 25% 20%;
+    grid-template-areas: 
+        "top"
+        "job-title"
+        "price"
+        "bottom";
 }
 
 img {
     border-radius: 75%;
+    border: greenyellow 2px solid;
 }
 
 #online {
-    margin-left: auto;
+    text-align: right;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+#top {
+    grid-area: top;
+}
+
+#job-title {
+    background-color: lightgrey;
+    padding: 2.55px 0;
+    font-size: 1.3rem;
+    grid-area: job-title;
+}
+
+#price {
+    grid-area: price;
+}
+
+#bottom {
+    grid-area: bottom;
+}
+
+
+#description {
+    display: none;
 }

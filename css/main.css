@@ -33,45 +33,66 @@ main {
     background-color: white;
     width: 250px;
     text-align: center;
-    grid-template-columns: 1fr;
+    font-size: 1.5rem;
+    /* grid-template-columns: 1fr;
     grid-template-rows: 35% 20% 25% 20%;
     grid-template-areas: 
         "top"
         "job-title"
         "price"
-        "bottom";
+        "bottom"; */
 }
 
 img {
-    border-radius: 75%;
-    border: greenyellow 2px solid;
+    border-radius: 50%;
+    border: greenyellow 3px solid;
 }
 
 #online {
     text-align: right;
     font-weight: lighter;
-    font-size: larger;
+    margin: 5px 10px 0 0;
 }
 
-#top {
+/* #top {
     grid-area: top;
-}
+} */
 
 #job-title {
     background-color: lightgrey;
     padding: 2.55px 0;
-    font-size: 1.3rem;
-    grid-area: job-title;
+    /* grid-area: job-title; */
 }
 
-#price {
-    grid-area: price;
+#stars {
+    color: yellow;
 }
+
+/* #price {
+    grid-area: price;
+} */
 
 #bottom {
-    grid-area: bottom;
+    /* grid-area: bottom; */
+    display: flex;
 }
 
+.contact {
+    height: 45px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0;
+}
+
+#phone {
+    background-color: lightgreen;
+}
+
+#message {
+    background-color: green;
+}
 
 #description {
     display: none;

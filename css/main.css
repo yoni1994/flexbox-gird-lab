@@ -97,3 +97,72 @@ img {
 #description {
     display: none;
 }
+
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: grid;
+        width: 500px;
+        text-align: left;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "online name"
+            "img job-title"
+            "img description"
+            "bottom price";
+    }
+
+    #online {
+        text-align: left;
+        padding: 5px 0 0 10px;
+        grid-area: online;
+    }
+
+    img {
+        grid-area:img;
+        margin: 0 auto;
+    }
+
+    #job-title {
+        grid-area: job-title;
+    }
+
+    #description {
+        grid-area: description;
+        display: inline;
+    }
+
+    #description > p {
+        border-left: green 4px solid;
+        padding-left: 5px;
+    }
+
+    #bottom {
+        grid-area: bottom;
+    }
+
+    #phone, #message {
+        height: inherit;
+        margin-top: 0;
+    }
+
+    #name {
+        grid-area: name;
+    }
+
+    #price {
+        grid-area: price;
+        font-size: 1.1rem;
+    }
+
+    #price > p {
+        text-align: left;
+        font-size: 1.16rem;
+    }
+
+    #name, #job-title, #description, #price {
+        background-color: lightgray;
+        padding-left: 20px;
+    }
+}

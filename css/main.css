@@ -88,10 +88,12 @@ img {
 
 #phone {
     background-color: lightgreen;
+    font-size: 2rem;
 }
 
 #message {
     background-color: green;
+    font-size: 2rem;
 }
 
 #description {
